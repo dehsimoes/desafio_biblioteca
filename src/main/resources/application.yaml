@@ -26,5 +26,5 @@ springdoc:
 
 logging:
   level:
-    br.com.sicredi.biblioteca: DEBUG
+    com.sicredi.biblioteca: DEBUG
     org.springframework.cache: DEBUG
