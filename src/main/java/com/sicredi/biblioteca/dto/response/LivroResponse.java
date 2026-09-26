@@ -1,4 +1,17 @@
 package com.sicredi.biblioteca.dto.response;
 
-public class LivroResponse {
-}
+import com.sicredi.biblioteca.entity.GeneroPojo;
+
+import java.time.LocalDateTime;
+
+public record LivroResponse(
+        String id,
+        String titulo,
+        String autor,
+        String isbn,
+        Integer anoPublicacao,
+        GeneroPojo genero,
+        Boolean disponivel,
+        LocalDateTime dataInclusao,
+        LocalDateTime dataAtualizacao
+) {}

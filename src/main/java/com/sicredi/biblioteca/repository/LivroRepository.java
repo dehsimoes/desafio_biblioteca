@@ -6,11 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.Optional;
-
 public interface LivroRepository extends MongoRepository<Livro, String> {
-
-    Optional<Livro> findByIsbn(String isbn);
 
     boolean existsByIsbn(String isbn);
 
